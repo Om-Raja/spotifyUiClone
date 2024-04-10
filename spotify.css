@@ -1,0 +1,231 @@
+body {
+  font-family: "Montserrat", sans-serif;
+  overflow: hidden;
+  margin: 0;
+  background-color: #000;
+  color: #fefefe;
+}
+
+.main {
+  display: flex;
+  height: 100vh;
+  padding: 8px 10px 0;
+}
+
+.sidebar {
+  width: 353px;
+}
+
+.main-content {
+  flex-grow: 1;
+  overflow: auto;
+  border-radius: 1rem;
+  background-color: #121212;
+  margin-left: 8px;
+  height: 87.8%;
+}
+
+.music-player {
+  position: fixed;
+  bottom: 0px;
+  height: 72px;
+  width: 100%;
+  background-color: #000;
+}
+
+/* designing sidebar */
+
+.nav-options a {
+  text-decoration: none;
+  font-size: 1rem;
+  color: #b2b3b2;
+  font-weight: 600;
+}
+
+.nav-options i {
+  font-size: 1.25rem;
+  padding: 0 15px;
+  color: #b2b3b2;
+}
+
+.nav-options {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #121212;
+  border-radius: 1rem;
+  height: 7rem;
+  padding: 0.5rem 0.75rem;
+}
+
+.home,
+.search {
+  line-height: 48px;
+}
+
+.nav-options a:hover,
+i:hover {
+  color: #fefefe;
+}
+
+.library {
+  height: 68%;
+  display: flex;
+  flex-direction: column;
+  background-color: #121212;
+  margin-top: 10px;
+  border-radius: 1rem;
+  position: relative;
+}
+
+.library-nav {
+  display: flex;
+  height: 10%;
+  width: 100%;
+}
+
+.library-nav img {
+  width: 1.5rem;
+  height: 1.5rem;
+  padding: 8px 16px;
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+.library-nav a {
+  text-decoration: none;
+  font-size: 1rem;
+  color: #b2b3b2;
+  font-weight: 600; 
+  line-height: 40px;
+}
+
+.library-nav a:hover {
+  color: #fff;
+}
+
+.library-nav i {
+  color: #b2b3b2;
+}
+
+#addToLibrary {
+  position: relative;
+  top: 12px;
+  left: 35%;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+#arrowFromLibrary {
+  position: relative;
+  top: 12px;
+  left: 40%;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.library-nav i:hover, img:hover{
+    opacity:1;
+    color: #fff;
+}
+
+.box1, .box2{
+  background-color: #242424;
+  width: 95%;
+  height: 50%;
+  padding: 1px 0px;
+  margin-left: 3%;
+  margin-top: 4%;
+  border-radius: 0.7rem;
+}
+
+.box2{
+  padding-bottom: 2px;
+}
+
+.starter p, .starter h4{
+  padding-left: 18px;
+}
+
+.starter p{
+  font-size: 14px;
+  line-height: 0;
+}
+
+
+.box1 button{
+  border: none;
+  width: 132px;
+  height: 34px;
+  padding: 4px 16px;
+  border-radius: 55px;
+  font-weight: 700;
+  margin: 10px 18px;
+}
+
+.box2 button{
+  border: none;
+  width: 143px;
+  height: 32px;
+  padding: 4px 16px;
+  border-radius: 55px;
+  font-weight: 700;
+  margin: 10px 18px;
+}
+
+/* designing main content */
+
+.premiumBtn{
+  border: none;
+  font-size: 14px;
+  width: 148px;
+  height: 31px;
+  padding: 4px 16px;
+  border-radius: 55px;
+  font-weight: 700;
+  margin: 10px 18px;
+  position: relative;
+  left: 2rem;
+  cursor: pointer;
+}
+
+
+.installAppBtn{
+  border: none;
+  font-size: 14px;
+  width: 118px;
+  height: 32px;
+  /* padding: 1px; */
+  border-radius: 55px;
+  font-weight: 700;
+  margin: 10px 18px;
+  background-color:#000;
+  color: #fff;
+  cursor: pointer;
+}
+
+.stickyNav{
+  position: sticky;
+  top: 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.stickyNav img, .stickyNav i{
+  cursor: pointer;
+}
+
+.mainContentStickyIcons{
+  margin-left: 0.5rem;
+}
+
+.mainContentStickyOptions{
+  margin-right: 2rem;
+}
+
+@media(max-width: 1022px)
+{
+  .premiumBtn, .forwardIcon{
+    display:none;
+  }
+}
