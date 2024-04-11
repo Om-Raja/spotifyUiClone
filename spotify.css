@@ -23,6 +23,7 @@ body {
   background-color: #121212;
   margin-left: 8px;
   height: 87.8%;
+  padding: 0px 1.5rem;
 }
 
 .music-player {
@@ -215,10 +216,6 @@ i:hover {
   cursor: pointer;
 }
 
-.mainContentStickyIcons{
-  margin-left: 0.5rem;
-}
-
 .mainContentStickyOptions{
   margin-right: 2rem;
 }
@@ -228,4 +225,37 @@ i:hover {
   .premiumBtn, .forwardIcon{
     display:none;
   }
+}
+
+.card {
+  background-color: #232323;
+  width: 25%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+  padding: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.card img{
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.card .title{
+  font-weight: 500;
+  margin-bottom: 0;
+}
+.card .info{
+  opacity: 0.8;
+  font-size: 0.9rem;
+}
+.card-container{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
